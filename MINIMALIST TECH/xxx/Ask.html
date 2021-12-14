@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---- Project 2 Group 1: ---->
+<!---- Group memebers: ---->
+<!---- Rafa Al Awaji 1911086 ---->
+<!---- Noor Al Faraj 1915241 ---->
+<!---- Ghdah Alwagdani 1912520 ---->
+<!---- Suha Alrajhi 1912005 ---->
+
+<html>
+   	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+<body>
+  
+  
+   <img  autoplay muted loop id="bg-img" src="pic/background.jpg">
+    <div class="page-container">
+      <header>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <div class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!------ nav --->
+                  <nav class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="index.php" href="index.php" data-no="1">Home</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.php" data-no="2">Articles</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Ask.html" data-no="3">Ask</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="About.html" data-no="4">Contact</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+            </div>
+          </div>           
+        </div>        
+      </header>  
+
+      <body>
+
+      <li data-page-no="3" class="px-3">
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="tm-bg-dark content-pad">
+
+                <div class="form">
+              <h2> what device are you looking for? </h2>
+              <h6> Give us the specifications of the device you want and we will gladly help you find what suits you </h6>
+              <form action="connectt.php" method="post">
+                <p>
+                  <label id="fname">First Name:</label>
+                  <input for="fname" type="text" name="fname" placeholder="First Name" height="1" required>
+                </p>
+                <p>
+                  <label id="lname"> Last Name: </label>
+                  <input for="lname" type="text" name="lname" placeholder="Last Name" height="1" required >
+                </p>
+                <p>
+                  <label>Email:</label>
+                  <input type="Email" name="email" placeholder="XXXXX@XXXX.XXX" required>
+                </p>
+                <p>
+                  <label for="phone">Enter your phone number:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="XXXXXXXXXX" required>
+                </p>
+                <p>
+                  <label for="gen">What is your gender?</label>
+                  <label for="fem">Female</label>
+                  <input id="fem" type="radio" name="gander" value="Female">
+
+                  <label for="ma">Male</label>
+                  <input id="ma" type="radio" name="gander" value="male" checked>
+                </p>
+                <p>
+                  <label>DOB:</label>
+                  <input type="date" name="birthday" required>
+                </p>
+
+                <p>
+                  <label for="Device purpose">Choose your Device purpose:</label>
+                    <select name="Device" id="Device purpose">
+                      <optgroup label="Device purpose">
+                        <option value="Normal Work" selected>Normal Work</option>
+                        <option value="Hard Work">Hard Work</option>
+                        <option value="Edit Video">Edit Video </option>
+                        <option value="Gaming">Gaming</option>
+                      </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                  <label for="CPU">Choose the CPU you prefer </label>
+                    <select name="CPU" id="CPU preferred">
+                      <optgroup label="CPU">
+                        <option value=" I5" selected>I5</option>
+                        <option value=" I7 ">I7</option>
+                        <option value="I9">I9</option>
+                        <option value="RYZEN">RYZEN</option>
+                      </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                  <label for="RAM">Choose the RAM you prefer :</label>
+                    <select name="RAM" id="RAM preferred">
+                      <optgroup label="RAM">
+                        <option value="8GB" selected>8GB</option>
+                        <option value="16GB">16GB</option>
+                        <option value="64GB">64GB</option>
+                        <option value="128GB">128GB</option>
+                      </optgroup>
+                    </select>
+                </p>
+
+                <p>
+                  <label for="Battery">Choose the Battery you prefer :</label>
+                
+                <input id="exce" type="radio" name="meter" value="excellent"> 
+                      0 <meter min = "0"
+                      max = 5
+                      value="5"></meter>5
+
+                <input id="good" type="radio" name="meter" value="good"> 
+                      0 <meter min = "0"
+                      max = 5
+                      value="4"></meter>4 
+                      
+                      
+                <input id="good" type="radio" name="meter" value="good"> 
+                      0 <meter min = "0"
+                      max = 5
+                      value="3"></meter>3
+
+                <input id="good" type="radio" name="meter" value="good"> 
+                      0 <meter min = "0"
+                      max = 5
+                      value="2"></meter>2
+
+                <input id="good" type="radio" name="meter" value="good"> 
+                      0 <meter min = "0"
+                      max = 5
+                      value="1"></meter>1
+                </p>
+
+
+                <p class="full-width">
+                  <label for="">Tell us if you have anything special</label>
+                  <textarea name="" id="" cols="30" rows="7" placeholder="How Can we help you?" required></textarea>
+                </p> 
+                <p>
+                 <label id="fname">Language you prefer in communication: </label>
+
+                  <label for="eng">English</label>
+                  <input id="eng" type="radio" name="lang" value="English" checked>
+
+                  <label for="arab">Arabic</label>
+                  <input id="arab" type="radio" name="lang" value="Arabic"> 
+
+                  <label for="fren">French</label>
+                  <input id="fren" type="radio" name="lang" value="French"> 
+                </p>
+                <p class="full-width">
+                  <input onclick="return confirm('Thank you for visiting our site , we will reach out to you soon ')"  type="submit" name="submit" value="Send">
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+</body>
+</html>

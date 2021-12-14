@@ -1,0 +1,198 @@
+<!--
+    Name:Abrar Ghandurah
+    ID:1910992
+    Section :C2L,C2
+-->
+
+<!Doctype html>
+
+
+
+
+<html>
+
+
+
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cssweb.css">
+    <script src="script.js" type="text/javascript">              
+
+    
+    
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Press+Start+2P&display=swap');
+
+
+       
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+    <div id="header">
+        <p>
+            <!--contain logo and text about the website -->
+        <header>
+            <h1>Gamer's Hub</h1>
+
+        </header>
+        </p>
+
+
+        <p>
+            <!--contain navigation links -->
+        <div id="navbar">
+            <nav>
+                <a href="index.html">Home</a>&nbsp;
+                <a href="aboutus.html">About Us</a>&nbsp;
+                <a href="page4.html">Buy Game</a>&nbsp;
+
+            </nav>
+        </div>
+
+        </p>
+        <br>
+        <hr>
+    </div>
+
+    <div id="userform">
+
+
+
+        <form  onclick="confirmAction()" name="myForm" action="form.php" onsubmit="return validateForm()" method="post" >
+
+            <p>
+                <label>First Name <input type="text" id="fname" name="FirstName" placeholder="Your Name" required
+                        checked></label><br>
+
+
+                <label>Last Name <input type="text" id="lname" name="LastName" placeholder="Your Last Name" required
+                        checked></label><br>
+
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Age<input type="text" id="age" name="age" placeholder="Your Age" required checked></label>
+            </p>
+
+            <hr>
+
+
+
+            <p>
+                <label>Choose Your Gender:&nbsp;</label>
+                <label>Female
+                    <input type="radio" id="gender" name="gender" value="Female" required checked></label>
+                <label>Male
+                    <input type="radio" id="gender" name="gender" value="Male" required checked></label>
+            </p>
+
+
+
+            <p><label>Date of Birth</label>
+                <input type="date" id="birth" name="birth" required checked>
+            </p>
+
+            <hr>
+            <p>
+                <label>Enter your e-mail
+                    <input type="text" id="email" name="email" placeholder="example@gmail.com" required checked></label>
+            </p>
+
+
+            <p>
+                <label>Choose Nationality</label>
+                <select id="Nationality" name="nationality" required checked>
+                    <option value="sa">Saudi</option>
+                    <option value="usa">American</option>
+                    <option value="uk">British</option>
+                    <option value="ireland">Irish</option>
+                    <option value="Sweden">Swedish</option>
+                </select>
+            </p>
+
+
+            <p>
+                <label>Enter some Message
+                    <textarea name="message" rows="10" cols="30">Enter any Message here...
+                            </textarea>
+                </label>
+
+            </p>
+
+
+            <p>
+                <label>Phone Number
+                    <input type="tel" id="number" name="number" placeholder="(+966) 555 555 555"
+                        pattern="^(009665|9665|\+9665|05|5)(5|0|3|6|4|9|1|8|7)([0-9]{7})$" required checked>
+                </label>
+            </p>
+
+            <p>
+                What language do you speak:
+
+                <input type="checkbox" id="arabic" name="lang" value="arabic" checked>
+                <label for="vehicle1">Arabic</label>
+
+                <input type="checkbox" id="english" name="lang" value="english" checked>
+                <label for="vehicle2">English</label>
+
+                <input type="checkbox" id="french" name="lang" value="french" checked>
+                <label for="vehicle3"> French</label>
+
+            </p>
+
+
+            <p>
+                <input type="submit" name="submit" value="submit"   onclick="return confirm('Are you sure ?')">
+                <input type="reset" value="Reset">
+
+            </p>
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+
+    <div id="footer">
+        <p>
+        <footer>
+            <p><em>copyright &copy; 2021 Gamer's Hub</em></p>
+            <p>Developer: Abrar Ghandurah<br>
+            <p>contact us at :</p>
+
+            <a href="mailto:example@gmail.com">
+                <img class="animate" src="gmail.png" alt="logo" width="50" height="50"></a></li>&nbsp;&nbsp;
+
+            <a href="https://www.instagram.com/">
+                <img  class="animate" src="insta.png" alt="logo" width="50" height="50"></a></li>&nbsp;&nbsp;
+
+            <a href="https://twitter.com/">
+                <img  class="animate" src="twitter.png" alt="logo" width="50" height="50"></a></li>&nbsp;&nbsp;
+
+            <a href="https://www.facebook.com/">
+                <img class="animate" src="face.png" alt="logo" width="50" height="50"></a></li>&nbsp;&nbsp;
+
+
+        </footer>
+    </div>
+
+
+
+
+</body>
+
+</html>

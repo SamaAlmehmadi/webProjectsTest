@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---- Project 2 Group 1: ---->
+<!---- Group memebers: ---->
+<!---- Rafa Al Awaji 1911086 ---->
+<!---- Noor Al Faraj 1915241 ---->
+<!---- Ghdah Alwagdani 1912520 ---->
+<!---- Suha Alrajhi 1912005 ---->
+
+<html> 
+    <head>
+  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>MINIMALIST TECH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+  
+    
+
+</head>
+<script>
+  function myFunction() {
+
+   alert("Button clicked successfully !");  
+       alert(true);
+       
+  }
+
+  </script>
+<body>
+   <img  autoplay muted loop id="bg-img" src="pic/background.jpg">
+    <div class="page-container">
+      <header>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <div class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="#">MINIMALIST TECH</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <!------ nav --->
+                  <nav class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="index.php" href="index.php" data-no="1">Home</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="login.php" data-no="2">Articles</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Ask.html" data-no="3">Ask</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="About.html" data-no="4">Contact</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+            </div>
+          </div>           
+        </div>        
+      </header>      
+
+     
+
+  <li data-page-no="3" class="px-3">
+            <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+              <div class="circle intro-circle-1"></div>
+              <div class="circle intro-circle-2"></div>
+              <div class="tm-bg-dark content-pad">
+
+                <div class="form">
+              <h3>Send us a message</h3>
+              <form action="aboutUSS.php" method="post">
+                <p>
+                  <label id="fname">Enter your Name: </label>
+                  <input for="fname" type="text" name="fname" placeholder="First Name" height="1" required >
+                </p>
+                <p>
+                  <label>Email:</label>
+                  <input type="Email" name="email" placeholder="XXXXX@XXXX.XXX" required >
+                </p>
+
+
+                    <script>
+                      document.contact.onsubmit=function(){
+                          if(this.city.value==""){
+                              alert("Choose City");
+                              this.city.focus();
+                              return false;
+                          }
+                          else{
+                              alert("Thanks ");
+                          }
+                      }
+                      </script>
+                </p>
+                <p>
+                  <label for="phone">Enter your phone number:</label>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="XXXXXXXXXX" required >
+                </p>
+                <p>
+                 <label id="fname">Language you prefer in communication: </label>
+
+                  <label for="eng">English</label>
+                  <input id="eng" type="radio" name="lang" value="English" checked  >
+
+                  <label for="arab">Arabic</label>
+                  <input id="arab" type="radio" name="lang" value="Arabic" >  
+                </p>
+                <p class="full-width">
+                  <label for="">Write your message</label>
+                  <textarea  cols="30" rows="7" placeholder="How Can we help you?" required name="message"></textarea>
+                </p>
+                <p class="full-width">
+                  <button onclick="myFunction()">Send</button>
+                  <p id="demo"></p>
+
+                  <script>
+                    function myFunction() {
+                      confirm("Submitted successfully!");
+                    }
+                    </script>
+                </p>
+                
+              </form>
+            </div>
+          </div>
+</script> 
+<li data-page-no="3" class="px-3">
+  <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+    <div class="circle intro-circle-1"></div>
+    <div class="circle intro-circle-2"></div>
+    <div class="circle intro-circle-3"></div>
+    <div class="circle intro-circle-4"></div>
+    <div class="tm-bg-dark content-pad">
+      <h2 class="mb-4">Contact us</h2>
+      <p class="mb-4">
+       <p style="font-size: 0%200;"> Email:MINIMALIST_TECH@gmail.com</p>
+       <p style="font-size: 0%200;"> Phone Number:0507890211</p>
+       <p style="font-size: 0%200;"> twitter:MINIMALIST_TECH</p>
+       <p style="font-size: 0%200;"> Instagram:XMINIMALIST_TECHX</p>
+       <p><a href=" https://maps.windows.com/?form=WNAMSH&collection=point.21.580995_39.179883_Point/">Location</a></p>
+      </p>
+  </div>
+</li>
+
+</body>
+</html>

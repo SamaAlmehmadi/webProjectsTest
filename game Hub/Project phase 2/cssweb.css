@@ -1,0 +1,252 @@
+
+#content2{
+  float: right;
+  padding: 10px;
+  width: 70%;
+  background: rgba(175, 175, 175, 0.952);
+  height: 600px; 
+  border-radius: 25px;
+  
+}
+
+
+article{
+  font-family: 'Cairo', sans-serif;
+  color: black
+}
+
+
+#sidebar::after{
+  display: table;
+  height: 445px;
+}
+#sidebar{
+  width: 250px;
+  border-radius: 25px;
+  background: rgba(175, 175, 175, 0.952);
+  padding: 2px;
+}
+
+#text{
+  font-family: 'Cairo', sans-serif;
+  color: black;
+}
+
+aside{
+  display : inline-block;
+  width : 250px;
+  height : 250px;
+  border-radius: 25px;
+  background: rgba(175, 175, 175, 0.952);
+  padding: 1px;
+  font-family: 'Cairo', sans-serif;
+}
+
+#footer{
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  clear: both;
+
+}
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #navbar a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+  }
+  
+  #navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+ 
+  
+  #header h1{
+    text-align:center;
+    font-size: xxx-large;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    animation:blink 1s steps(4, start) infinite;
+    animation:color-change 2s infinite;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+   #logo2{
+    display: block;
+    margin-left: 8%;
+    margin-top: -10%; 
+  }
+
+  body{
+    background-image: url(/s.png);
+    display:block;
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+  }
+
+  table,th,td{
+    text-align: center;
+    border: 2px solid  black;
+    font-family:'Cairo', sans-serif ;  
+    font-size: larger;
+    padding: 1px;
+    border-spacing:2px;
+  }
+  #tab{
+    display:block;
+    font-size: normal;
+    font-family:'Cairo', sans-serif;
+    margin-left:2%;
+   
+    padding: 25px;
+    width: 65%;
+    background: rgba(175, 175, 175, 0.952);
+    height: 600px; 
+    border-radius: 25px;
+    
+  }
+
+  #userform{
+    border-radius: 5px;
+    background-color: rgba(175, 175, 175, 0.952);
+    padding: 20px;
+    font-family: "Cairo",sans-serif;
+    width: 70%;
+
+  }
+
+  input[type=email],input[type=number],input[type=text],select,textarea{
+    width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Cairo",sans-serif;
+  }
+
+    input[type=submit],input[type=reset]  {
+    background-color: #45a049;
+    width: 35%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Cairo",sans-serif;
+  }
+
+  #sidebar2{
+    width: 300px;
+    border-radius: 25px;
+    background: rgba(175, 175, 175, 0.952);
+    padding: 1px;
+  }
+
+  #content3{
+    float: right;
+    padding: 10px;
+    width: 65%;
+    background: rgba(175, 175, 175, 0.952);
+    height: 600px; 
+    border-radius: 25px;
+
+  }
+
+  #meter{
+    font-family:"Cairo",sans-serif;
+    font-size:xx-large;
+  }
+
+
+  @media (max-width: 600px) {
+    nav, article,table {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+
+  html {
+    background: linear-gradient(270deg, #656565, #ffffff, #000000);
+    background-size: 600% 600%;
+
+    -webkit-animation: html 19s ease infinite;
+    -moz-animation: html 19s ease infinite;
+    animation: html 19s ease infinite;
+}
+
+@-webkit-keyframes html {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes html {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes html {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@-o-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes color-change {
+  0% { color: gray; }
+  50% { color: white; }
+  100% { color: black; }
+}
+
+
+.animate{
+  animation-name: op;
+  animation-duration: 6s;
+  animation-iteration-count: 5;
+  border-radius: 7%;
+}
+@keyframes op{
+  from{opacity: 0.8; transform: scale(1);}
+  to{opacity: 1; transform: scale(1.1);}
+}
